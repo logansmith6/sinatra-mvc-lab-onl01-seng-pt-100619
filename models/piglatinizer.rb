@@ -7,7 +7,8 @@ end
 
 
 def piglatinize
-  word = @word.downcase
+  word_up = @word
+  word = word_up.downcase
   vowels = ['a', 'e', 'i', 'o', 'u']
   words = word.split(' ')
   result = []
