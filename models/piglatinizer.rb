@@ -19,3 +19,4 @@ def piglatinize(str)
     str # return unchanged
   end
 end
+end
