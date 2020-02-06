@@ -28,7 +28,7 @@ def piglatinize(word)
           end
           break
         else
-          if char == 'q' and word[i+1] == 'u'
+          if char == 'q' && word[i+1] == 'u'
             qu = true
             translate = words[i][count+2..words[i].length] + 'quay'
             result.push(translate)
