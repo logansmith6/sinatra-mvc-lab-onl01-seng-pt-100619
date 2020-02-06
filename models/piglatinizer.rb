@@ -39,12 +39,12 @@ def piglatinize(word)
           count += 1
         end
       end
-      if not qu 
+      if not qu
         translate = words[i][count..words[i].length] + translate + 'ay'
         result.push(translate)
-      end 
-    end 
-  end 
+      end
+    end
+  end
       result.join(' ')
 
 end
