@@ -20,7 +20,7 @@ def piglatinize(word)
       counter = 0
       word.each_with_index do |char, index|
         if vowels.include? char
-          if char == 'u' and translate[-1] == 'q'
+          if char == 'u' && translate[-1] == 'q'
             qu = true
             translate = words[i][count + 1..words[i].length] + translate + 'uay'
             result.push(translate)
