@@ -1,6 +1,9 @@
 class PigLatinizer
   attr_reader :word
 
+def initialize(word)
+  @word = word
+end 
 
 
 def piglatinize(word)
@@ -45,7 +48,7 @@ def piglatinize(word)
       end
     end
   end
-      result.join(' ')
+      @word = result.join(' ')
 
    end
 end
