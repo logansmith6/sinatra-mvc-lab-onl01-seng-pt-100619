@@ -7,7 +7,5 @@ class PigLatinizer
 
 
 
-  def word_pig(word)
-    
-  end
+
 end
