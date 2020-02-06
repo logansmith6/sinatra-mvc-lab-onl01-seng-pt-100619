@@ -11,6 +11,6 @@ class App < Sinatra::Base
 
     erb :user_input
 
-  end 
+  end
 
 end
