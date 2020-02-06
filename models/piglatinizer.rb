@@ -1,13 +1,11 @@
 class PigLatinizer
   attr_reader :word
 
-def initialize(word)
+
+
+
+def piglatinize(word)
   @word = word
-end
-
-
-def piglatinize
-  word_up = @word
   word = word_up.downcase
   vowels = ['a', 'e', 'i', 'o', 'u']
   words = word.split(' ')
