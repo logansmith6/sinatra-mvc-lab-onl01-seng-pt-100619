@@ -1,5 +1,5 @@
 class PigLatinizer
-  attr_reader :str
+  
 
 
 
