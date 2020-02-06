@@ -9,37 +9,37 @@ def piglatinize(word)
   words = word.split(' ')
   ordway = []
 
-  words.each_with_index do |word, i| 
+  words.each_with_index do |word, i|
     translate = ''
-    qu = false 
+    qu = false
     if vowels.include? word[0]
       translate = word + 'ay'
       result.push(translate)
-    else 
+    else
       word = word.split('')
-      counter = 0 
+      counter = 0
       word.each_with_index do |char, index|
-        if vowels.include? char 
+        if vowels.include? char
           if char == 'u' and translate[-1] == 'q'
-            qu = true 
+            qu = true
             translate = words[i][count + 1..words[i].length] + translate + 'uay'
             result.push(translate)
-            next 
-          end 
+            next
+          end
           break
-        else 
-          if char == 'q' and word[i+1] == 'u' 
-            qu = true 
+        else
+          if char == 'q' and word[i+1] == 'u'
+            qu = true
             translate = words[i][count+2..words[i].length] + 'quay'
             result.push(translate)
-            next 
-          else 
-            translate += char 
-          end 
+            next
+          else
+            translate += char
+          end
           count += 1
-        end 
-      end 
-end 
+        end
+      end
+end
 
 
 
