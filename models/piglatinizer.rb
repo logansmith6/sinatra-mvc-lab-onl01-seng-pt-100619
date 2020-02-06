@@ -6,7 +6,7 @@ class PigLatinizer
 def piglatinize(word)
   @word = word.downcase
   vowels = ['a', 'e', 'i', 'o', 'u']
-  words = @word.split(' ')
+  words = word.split(' ')
   result = []
 
   words.each_with_index do |word, i|
