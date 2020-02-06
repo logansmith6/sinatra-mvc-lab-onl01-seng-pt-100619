@@ -7,7 +7,7 @@ class App < Sinatra::Base
     erb :index
   end
 
-  post '/'
+  post '/' do
 
     erb :user_input
 
