@@ -47,4 +47,5 @@ def piglatinize(word)
   end
       result.join(' ')
 
+    end
 end
