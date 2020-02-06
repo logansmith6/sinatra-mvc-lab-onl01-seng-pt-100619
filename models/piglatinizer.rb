@@ -7,7 +7,7 @@ def piglatinize(word)
   @word = word.downcase
   vowels = ['a', 'e', 'i', 'o', 'u']
   words = word.split(' ')
-  ordway = []
+  result = []
 
   words.each_with_index do |word, i|
     translate = ''
